@@ -1,0 +1,86 @@
+Assignment No: 3
+Title of the Assignment: Implement Min, Max, Sum and Average operations using Parallel
+Reduction.
+Objective of the Assignment: To understand the concept of parallel reduction and how it can be usedto
+perform basic mathematical operations on given data sets.
+Prerequisite:
+1. Parallel computing architectures
+2. Parallel programming models
+3. Proficiency in programming languages
+--------------------------------------------------
+Contents for Theory:
+1. What is parallel reduction and its usefulness for mathematical operations on large data?
+2. Concept of OpenMP
+3. How do parallel reduction algorithms for Min, Max, Sum, and Average work, and what are
+their advantages and limitations?
+---------------------------------------------------
+Department of Computer
+Engineering
+Course : Laboratory Practice
+V
+College of Engineering Malegaon Bk
+Parallel Reduction.
+Here's a function-wise manual on how to understand and run the sample C++ program that demonstrates
+how to implement Min, Max, Sum, and Average operations using parallel reduction.
+1. Min_Reduction function
+ The function takes in a vector of integers as input and finds the minimum value in the
+vector using parallel reduction.
+ The OpenMP reduction clause is used with the "min" operator to find the minimum value
+across all threads.
+ The minimum value found by each thread is reduced to the overall minimum value of the
+entire array.
+ The final minimum value is printed to the console.
+2. Max_Reduction function
+ The function takes in a vector of integers as input and finds the maximum value in the
+vector using parallel reduction.
+ The OpenMP reduction clause is used with the "max" operator to find the maximum value
+across all threads.
+ The maximum value found by each thread is reduced to the overall maximum value of the
+entire array.
+ The final maximum value is printed to the console.
+3. Sum_Reduction function
+ The function takes in a vector of integers as input and finds the sum of all the values in the
+vector using parallel reduction.
+ The OpenMP reduction clause is used with the "+" operator to find the sum across all
+threads.
+ The sum found by each thread is reduced to the overall sum of the entire array.
+ The final sum is printed to the console.
+4. Average_Reduction function
+ The function takes in a vector of integers as input and finds the average of all the values in
+the vector using parallel reduction.
+ The OpenMP reduction clause is used with the "+" operator to find the sum across all
+threads.
+Department of Computer
+Engineering
+ The sum found by each thread is reduced to the overall sum of the entire array.
+ The final sum is divided by the size of the array to find the average.
+ The final average value is printed to the console.
+5. Main Function
+ The function initializes a vector of integers with some values.
+ The function calls the min_reduction, max_reduction, sum_reduction, and
+average_reduction functions on the input vector to find the corresponding values.
+ The final minimum, maximum, sum, and average values are printed to the console.
+6. Compiling and running the program
+Compile the program: You need to use a C++ compiler that supports OpenMP, such as g++ or clang.
+Open a terminal and navigate to the directory where your program is saved. Then, compilethe program
+using the following command:
+$ g++ -fopenmp program.cpp -o program
+This command compiles your program and creates an executable file named "program". The "-fopenmp"
+flag tells the compiler to enable OpenMP.
+Run the program: To run the program, simply type the name of the executable file in the terminaland press
+Enter:
+Conclusion: We have implemented the Min, Max, Sum, and Average operations using parallelreduction
+in C++ with OpenMP. Parallel reduction is a powerful technique that allows us to perform these
+operations on large arrays more efficiently by dividing the work among multiple threads running in
+parallel. We presented a code example that demonstrates the implementationof these operations using
+parallel reduction in C++ with OpenMP. We also provided a manual for running OpenMP programs on the
+Ubuntu platform.
+Assignment Question
+1. What are the benefits of using parallel reduction for basic operations on large arrays?
+2. How does OpenMP's "reduction" clause work in parallel reduction?
+3. How do you set up a C++ program for parallel computation with OpenMP?
+4. What are the performance characteristics of parallel reduction, and how do they vary basedon input
+size?
+5. How can you modify the provided code example for more complex operations using parallelreduction?.
+$ ./program
+EXPERIMENT
